@@ -41,7 +41,7 @@
           <h1 class="max-w-3xl text-5xl font-black leading-[0.98] tracking-normal sm:text-6xl lg:text-7xl">TRT Med Reminders</h1>
           <p class="mt-6 max-w-2xl text-xl leading-8 text-black/68">Keep recurring medication reminders, dose actions, and history in one focused iPhone app.</p>
           <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a class="inline-flex min-h-12 items-center justify-center rounded-xl bg-brand px-6 text-base font-extrabold text-white shadow-soft hover:bg-[#4248df]" href="mailto:support@bronson.dev?subject=TRT%20Med%20Reminders">Contact Support</a>
+            <button class="contact-link inline-flex min-h-12 items-center justify-center rounded-xl bg-brand px-6 text-base font-extrabold text-white shadow-soft hover:bg-[#4248df]" type="button">Contact Support</button>
             <a class="inline-flex min-h-12 items-center justify-center rounded-xl border border-brand/15 bg-white px-6 text-base font-extrabold text-brand hover:bg-brand/5" href="#screens">View Screens</a>
           </div>
           <dl class="mt-10 grid gap-4 sm:grid-cols-3">
@@ -185,8 +185,21 @@
     <footer class="border-t border-black/5 bg-white">
       <div class="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-7 text-sm font-semibold text-black/55 sm:flex-row sm:items-center sm:justify-between sm:px-8">
         <span>&copy; 2026 Bronson Development</span>
-        <a class="text-brand hover:text-[#4248df]" href="mailto:support@bronson.dev?subject=TRT%20Med%20Reminders">support@bronson.dev</a>
+        <button class="contact-link text-left text-brand hover:text-[#4248df]" type="button">Contact support</button>
       </div>
     </footer>
+    <script>
+      (() => {
+        const parts = ['support', 'bronson', 'dev'];
+        const address = `${parts[0]}@${parts[1]}.${parts[2]}`;
+        const subject = encodeURIComponent('TRT Med Reminders');
+
+        document.querySelectorAll('.contact-link').forEach((button) => {
+          button.addEventListener('click', () => {
+            window.location.href = `mailto:${address}?subject=${subject}`;
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
