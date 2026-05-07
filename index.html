@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TRT Med Reminders</title>
+    <meta name="description" content="TRT Med Reminders helps you track recurring medication schedules, today's doses, missed reminders, and dose history from a simple iPhone app.">
+    <meta property="og:title" content="TRT Med Reminders">
+    <meta property="og:description" content="A focused reminder app for medication schedules and dose history.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://trtmedreminders.bronson.dev">
+    <meta property="og:image" content="https://trtmedreminders.bronson.dev/screenshot1.png">
+    <link rel="canonical" href="https://trtmedreminders.bronson.dev">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="bg-[#f4f5fa] text-ink antialiased selection:bg-brand selection:text-white">
+    <header class="sticky top-0 z-50 border-b border-black/5 bg-white/85 backdrop-blur-xl">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
+        <a href="#top" class="flex items-center gap-3 font-bold tracking-normal">
+          <span class="relative grid h-11 w-11 place-items-center rounded-[14px] bg-brand shadow-soft">
+            <span class="h-4 w-7 rotate-[-42deg] rounded-full bg-white before:block before:h-4 before:w-[2px] before:bg-brand before:content-[''] before:ml-[13px]"></span>
+            <span class="absolute -bottom-1 -right-1 h-5 w-5 rounded-full border-2 border-white bg-brand">
+              <span class="absolute left-[8px] top-[3px] h-[8px] w-[2px] bg-white"></span>
+              <span class="absolute left-[8px] top-[9px] h-[2px] w-[5px] bg-white"></span>
+            </span>
+          </span>
+          <span>TRT Med Reminders</span>
+        </a>
+        <nav class="hidden items-center gap-7 text-sm font-semibold text-black/60 sm:flex">
+          <a class="hover:text-brand" href="#features">Features</a>
+          <a class="hover:text-brand" href="#screens">Screens</a>
+          <a class="hover:text-brand" href="#privacy">Privacy</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="mx-auto grid max-w-7xl items-center gap-12 px-5 pb-20 pt-14 sm:px-8 lg:grid-cols-[1fr_0.92fr] lg:pb-28 lg:pt-20">
+        <div>
+          <p class="mb-4 text-sm font-extrabold uppercase tracking-[0.16em] text-brand">Medication schedules without the noise</p>
+          <h1 class="max-w-3xl text-5xl font-black leading-[0.98] tracking-normal sm:text-6xl lg:text-7xl">TRT Med Reminders</h1>
+          <p class="mt-6 max-w-2xl text-xl leading-8 text-black/68">Keep recurring medication reminders, dose actions, and history in one focused iPhone app.</p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a class="inline-flex min-h-12 items-center justify-center rounded-xl bg-brand px-6 text-base font-extrabold text-white shadow-soft hover:bg-[#4248df]" href="mailto:support@bronson.dev?subject=TRT%20Med%20Reminders">Contact Support</a>
+            <a class="inline-flex min-h-12 items-center justify-center rounded-xl border border-brand/15 bg-white px-6 text-base font-extrabold text-brand hover:bg-brand/5" href="#screens">View Screens</a>
+          </div>
+          <dl class="mt-10 grid gap-4 sm:grid-cols-3">
+            <div class="border-l-4 border-brand bg-white/70 p-4">
+              <dt class="font-extrabold">Today</dt>
+              <dd class="mt-1 text-sm leading-6 text-black/60">See every dose due now and next.</dd>
+            </div>
+            <div class="border-l-4 border-mint bg-white/70 p-4">
+              <dt class="font-extrabold">History</dt>
+              <dd class="mt-1 text-sm leading-6 text-black/60">Review taken, skipped, and missed reminders.</dd>
+            </div>
+            <div class="border-l-4 border-amber bg-white/70 p-4">
+              <dt class="font-extrabold">Schedules</dt>
+              <dd class="mt-1 text-sm leading-6 text-black/60">Manage active and paused medications.</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="relative mx-auto w-full max-w-[520px]">
+          <div class="absolute -left-4 top-16 hidden rounded-2xl border border-black/5 bg-white/95 p-4 shadow-soft sm:flex sm:items-center sm:gap-3">
+            <span class="grid h-10 w-10 place-items-center rounded-full bg-mint text-xl font-black text-white">&check;</span>
+            <span>
+              <strong class="block text-sm">Dose logged</strong>
+              <span class="text-sm text-black/55">Today at 8:00 AM</span>
+            </span>
+          </div>
+          <div class="absolute -right-2 bottom-24 hidden rounded-2xl border border-black/5 bg-white/95 p-4 shadow-soft sm:flex sm:items-center sm:gap-3">
+            <span class="grid h-10 w-10 place-items-center rounded-xl bg-amber/15">
+              <span class="h-5 w-5 rounded border-2 border-amber"></span>
+            </span>
+            <span>
+              <strong class="block text-sm">Next reminder</strong>
+              <span class="text-sm text-black/55">Tomorrow morning</span>
+            </span>
+          </div>
+          <div class="mx-auto overflow-hidden rounded-[2.4rem] border-[10px] border-[#15161a] bg-[#15161a] shadow-phone">
+            <img class="block h-auto w-full" src="screenshot1.png" alt="Today screen showing upcoming medication reminders">
+          </div>
+        </div>
+      </section>
+
+      <section class="border-y border-black/5 bg-white">
+        <div class="mx-auto grid max-w-7xl gap-4 px-5 py-8 sm:px-8 md:grid-cols-3">
+          <article class="p-4">
+            <span class="mb-4 block h-10 w-10 rotate-[-42deg] rounded-full bg-brand"></span>
+            <h2 class="text-xl font-black">Simple medication setup</h2>
+            <p class="mt-2 leading-7 text-black/62">Add medication names, dosage, active status, and recurring schedule details.</p>
+          </article>
+          <article class="p-4">
+            <span class="mb-4 grid h-10 w-10 place-items-center rounded-full bg-mint text-white">&bull;</span>
+            <h2 class="text-xl font-black">Clear dose actions</h2>
+            <p class="mt-2 leading-7 text-black/62">Mark a reminder taken or skipped from the Today screen when it is due.</p>
+          </article>
+          <article class="p-4">
+            <span class="mb-4 grid h-10 w-10 place-items-center rounded-full bg-amber text-white">&#8634;</span>
+            <h2 class="text-xl font-black">History at a glance</h2>
+            <p class="mt-2 leading-7 text-black/62">Use the history view to confirm what happened and spot missed reminders.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="features" class="mx-auto grid max-w-7xl items-center gap-10 px-5 py-20 sm:px-8 lg:grid-cols-2">
+        <div>
+          <p class="mb-3 text-sm font-extrabold uppercase tracking-[0.16em] text-brand">Built for repeated routines</p>
+          <h2 class="text-4xl font-black leading-tight sm:text-5xl">Designed around the daily check-in.</h2>
+          <p class="mt-5 max-w-2xl text-lg leading-8 text-black/65">The app keeps the most important question up front: what is due today? Future reminders, active medications, and history stay close without crowding the main workflow.</p>
+          <ul class="mt-7 space-y-3 text-base font-semibold text-black/74">
+            <li class="flex gap-3"><span class="text-mint">&check;</span> Upcoming reminders with future preview</li>
+            <li class="flex gap-3"><span class="text-mint">&check;</span> Medication list with active and paused states</li>
+            <li class="flex gap-3"><span class="text-mint">&check;</span> History and notes area for logged reminder outcomes</li>
+          </ul>
+        </div>
+        <div class="border border-black/5 bg-white p-5 shadow-soft">
+          <div class="space-y-3">
+            <div class="flex items-center gap-4 bg-[#f8f8fd] p-4">
+              <span class="h-3 w-3 rounded-full bg-brand"></span>
+              <div class="min-w-0 flex-1">
+                <strong class="block truncate">depo-testosterone</strong>
+                <span class="text-sm text-black/55">100mg, 8:00 AM</span>
+              </div>
+              <em class="not-italic text-sm font-extrabold text-red-500">Overdue</em>
+            </div>
+            <div class="flex items-center gap-4 bg-[#f4fbf7] p-4">
+              <span class="h-3 w-3 rounded-full bg-mint"></span>
+              <div class="min-w-0 flex-1">
+                <strong class="block truncate">Daily supplement</strong>
+                <span class="text-sm text-black/55">1 capsule, 12:30 PM</span>
+              </div>
+              <em class="not-italic text-sm font-extrabold text-mint">Taken</em>
+            </div>
+          </div>
+          <div class="mt-8 flex h-40 items-end gap-3 border-t border-black/5 pt-5">
+            <span class="h-[38%] flex-1 bg-brand/25"></span>
+            <span class="h-[68%] flex-1 bg-mint/35"></span>
+            <span class="h-[46%] flex-1 bg-amber/35"></span>
+            <span class="h-[82%] flex-1 bg-brand/55"></span>
+            <span class="h-[56%] flex-1 bg-aqua/35"></span>
+            <span class="h-[74%] flex-1 bg-mint/55"></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="screens" class="bg-[#101218] px-5 py-20 text-white sm:px-8">
+        <div class="mx-auto max-w-7xl">
+          <div class="mb-10">
+            <p class="mb-3 text-sm font-extrabold uppercase tracking-[0.16em] text-aqua">Product screens</p>
+            <h2 class="text-4xl font-black leading-tight sm:text-5xl">Fast to scan. Hard to miss.</h2>
+          </div>
+          <div class="grid gap-7 md:grid-cols-3">
+            <figure>
+              <div class="overflow-hidden rounded-[2rem] border-[8px] border-white/10 bg-black shadow-phone">
+                <img class="block w-full" src="screenshot1.png" alt="Today view with upcoming medication reminders">
+              </div>
+              <figcaption class="mt-4 text-center font-extrabold text-white/85">Today</figcaption>
+            </figure>
+            <figure>
+              <div class="overflow-hidden rounded-[2rem] border-[8px] border-white/10 bg-black shadow-phone">
+                <img class="block w-full" src="screenshot2.png" alt="Medications view with search and medication status">
+              </div>
+              <figcaption class="mt-4 text-center font-extrabold text-white/85">Medications</figcaption>
+            </figure>
+            <figure>
+              <div class="overflow-hidden rounded-[2rem] border-[8px] border-white/10 bg-black shadow-phone">
+                <img class="block w-full" src="screenshot3.png" alt="History view with filter controls and empty history state">
+              </div>
+              <figcaption class="mt-4 text-center font-extrabold text-white/85">History</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="privacy" class="mx-auto grid max-w-7xl gap-8 px-5 py-16 sm:px-8 md:grid-cols-[0.9fr_1fr]">
+        <div>
+          <p class="mb-3 text-sm font-extrabold uppercase tracking-[0.16em] text-brand">Focused by design</p>
+          <h2 class="text-3xl font-black leading-tight sm:text-4xl">Medication reminders should feel private, quiet, and dependable.</h2>
+        </div>
+        <p class="text-lg leading-8 text-black/65">TRT Med Reminders is built as a focused utility for schedules and reminder history. It is not medical advice and does not replace care from a licensed clinician.</p>
+      </section>
+    </main>
+
+    <footer class="border-t border-black/5 bg-white">
+      <div class="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-7 text-sm font-semibold text-black/55 sm:flex-row sm:items-center sm:justify-between sm:px-8">
+        <span>&copy; 2026 Bronson Development</span>
+        <a class="text-brand hover:text-[#4248df]" href="mailto:support@bronson.dev?subject=TRT%20Med%20Reminders">support@bronson.dev</a>
+      </div>
+    </footer>
+  </body>
+</html>
